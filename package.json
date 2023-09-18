@@ -1,0 +1,27 @@
+{
+  "name": "ocpp-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc",
+    "start": "tsc & nodemon ./dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.6.0",
+    "@types/ws": "^8.5.5",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ocpp-rpc": "^2.0.2",
+    "ws": "^8.14.1"
+  }
+}
